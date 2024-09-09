@@ -15,10 +15,19 @@ y = reverse(x)
 print(y)
 
 def reverse_using_string(num):
-    sting_num = str(num)
+    string_num = str(num)
+    res = 0
     
-    return int(sting_num[::-1])
+    if string_num[0] == '-':
+        res =  int('-' + string_num[:0:-1])
+    else:
+        res = int(string_num[::-1])
 
-a = 123456
+    if res > 2 ** 31 - 1 or res < -2 ** 31:
+        return 0
+        
+    return res
+
+a = -123
 b = reverse_using_string(a)
-# print(f"This is reversed number : {b}",)
+print(f"This is reversed number : {b}",)
