@@ -1,6 +1,4 @@
-a={"name":"harry",
-"from":"india",
-"marks":[92,98,96]}
+a={"name":"ayush","from":"india","marks":[92,98,96]}
 
 
 print(a)

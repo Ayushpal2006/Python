@@ -5,6 +5,7 @@ D[(1,2)]=12
 
 sum = 0
 for i in D:
+    print(i)
     sum = sum+D[i]
 
 
